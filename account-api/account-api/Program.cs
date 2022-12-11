@@ -20,9 +20,6 @@ namespace MagnetTradeAccountApi
 
         public static int Main(string[] args)
         {
-            var paymentText = File.ReadAllText(@"C:\Users\dvitk\OneDrive\Desktop\NobiaDigital-Recruitment-coding-test\recruitment-coding-test\account\src\data\Payments.jsx");
-            //var newPaymentText = Newtonsoft.Json.JsonConvert.DeserializeObject<TransactionMonth>(paymentText);
-
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Override("System", LogEventLevel.Warning)
                 .WriteTo.Console(new JsonFormatter())
